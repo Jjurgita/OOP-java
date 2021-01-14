@@ -1,4 +1,4 @@
-## Object Oriented Programming (OOPs) with Java
+## Object-Oriented Programming (OOP) with Java
 
 This project is for educational purposes only.
 
