@@ -23,8 +23,8 @@ public class Ciklai {
         while (i <= 100) {
             suma += i++;
             //tas pats kaip:
-//             suma = suma + i;
-//             i = i + 1;
+            // suma = suma + i;
+            // i = i + 1;
         }
         System.out.println("1 + 2 + ... + 100 = " + suma);
 
@@ -63,5 +63,6 @@ public class Ciklai {
         // CIKLO VALDYMAS
         // jeigu is ciklo norime iseiti anksciau laiko - "break"
         // norime nevykdyti likusiu ciklo sakiniu ir grizti i ciklo pradzia - "countinue"
+
     }
 }
