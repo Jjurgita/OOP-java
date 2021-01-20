@@ -1,4 +1,4 @@
-public class Triangles {
+public class P03U1_2 {
 
     public static void main(String[] args) {
 
