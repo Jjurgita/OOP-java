@@ -1,6 +1,8 @@
 package p06.notes;
 
 public class Zmogus {
+    // KLASES METODAI
+
     // Klases gali tureti ne tik laukus, bet ir metodus(funkcijas), kurios atliekas veiksmus su objekto laukais
 
     // Klases metodai gali grazinti reiksme (tipas nurodomas pries metodo varda)
