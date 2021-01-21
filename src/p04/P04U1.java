@@ -1,3 +1,5 @@
+package p04;
+
 public class P04U1 {
     public static void main(String[] args) {
         // rasti masyvo skaiciu vidurki; atspausdinti masyvu vidurkiu skirtuma

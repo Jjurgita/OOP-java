@@ -1,3 +1,4 @@
+package p04;
 
 public class P04U3 {
     public static void main(String[] args) {

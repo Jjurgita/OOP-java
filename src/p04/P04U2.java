@@ -1,3 +1,5 @@
+package p04;
+
 public class P04U2 {
     public static void main(String[] args) {
         // rasti visus skaicius is intervalo 1...1000, kurie lygus visu savo dalikliu mazesniu uz save pati sumai

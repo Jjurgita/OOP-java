@@ -1,3 +1,5 @@
+package p03;
+
 public class P03U1_2 {
 
     public static void main(String[] args) {

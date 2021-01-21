@@ -1,3 +1,5 @@
+package p03;
+
 public class P03U3 {
     public static void main(String[] args) {
         //duotas masyvas; surasyti masyvo elentus mazejimo tvarka

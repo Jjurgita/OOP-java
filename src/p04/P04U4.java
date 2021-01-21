@@ -1,3 +1,5 @@
+package p04;
+
 public class P04U4 {
     public static void main(String[] args) {
         //suapvalinti double tipo skaicius pagal nurodyta tiksluma
