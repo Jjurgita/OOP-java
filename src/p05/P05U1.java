@@ -29,12 +29,17 @@ public class P05U1 {
         System.out.println("Pirminiai duomenys: ");
         print(mokiniai);
 
-        //sulygiuoti pagal klase
+        //sulygiuoti pagal klase, pavardes
         for (int i = 0; i < mokiniai.length - 1 ; i++) {
             for (int j = i + 1; j < mokiniai.length; j++){
-                if (mokiniai[i].level > mokiniai[j].level) {
-                    //susikuriam laikina kintamaji tmp
-                    // i <-> j (atliekam kaip su tom dviem stiklinem - perpilt reikia triju stikliniu)
+//                if (mokiniai[i].level > mokiniai[j].level) {
+//                    //susikuriam laikina kintamaji tmp
+//                    // i <-> j (atliekam kaip su tom dviem stiklinem - perpilt reikia triju stikliniu)
+//                    Mokinys tmp = mokiniai[i];
+//                    mokiniai[i] = mokiniai[j];
+//                    mokiniai[j] = tmp;
+//                }
+                if (compare(mokiniai[i], mokiniai[j]) > 0) {
                     Mokinys tmp = mokiniai[i];
                     mokiniai[i] = mokiniai[j];
                     mokiniai[j] = tmp;
@@ -50,5 +55,12 @@ public class P05U1 {
         for (Mokinys m : mokiniai) {
             System.out.println(m.firstname + " " + m.lastname + " " + m.level);
         }
+    }
+
+    //palyginimui lastname naudojame compare.to
+    static int compare(Mokinys m1, Mokinys m2) {
+        if (m1.level < m2.level) return -1;
+        if (m1.level > m2.level) return 1;
+        return m1.lastname.compareTo(m2.lastname);
     }
 }
