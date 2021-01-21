@@ -1,4 +1,4 @@
-package intro;
+package obj.intro;
 
 public class HelloWorld {
 
