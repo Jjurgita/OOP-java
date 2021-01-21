@@ -1,3 +1,5 @@
+package p04;
+
 public class Ciklai {
     public static void main(String[] args) {
 
