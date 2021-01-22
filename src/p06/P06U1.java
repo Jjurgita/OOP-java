@@ -1,6 +1,5 @@
 package p06;
 
-import p05.Mokinys;
 import p06.notes.prat1.Student;
 
 public class P06U1 {
