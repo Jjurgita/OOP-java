@@ -8,13 +8,15 @@ public class StudentTrimester {
 
 //        Student students = new Student("Jonas", "Senukas", new int[] {8, 9, 8, 10});
         Student[] students = new Student[] {
-                new Student("Jonas", "Kazys", new int[] {8, 9, 8, 10}),
-                new Student("Petras", "Petraitis", new int[] {6, 6, 8, 4}),
-                new Student("Antanas", "Antanaitis", new int[] {7, 7, 7, 10}),
-                new Student("Jurgis", "Jurgaitis", new int[] {8, 10, 10, 10}),
-                new Student("Juozas", "Juozaitis", new int[] {6, 9, 4, 7}),
-                new Student("Jone", "Jonaite", new int[] {8, 10, 8, 10}),
-                new Student("Ona", "Onute", new int[] {7, 6, 8, 5})
+                new Student(2, "Jonas", "Kazys", new int[] {8, 9, 8, 10}),
+                new Student(3, "Petras", "Petraitis", new int[] {6, 6, 8, 4}),
+                new Student(1, "Antanas", "Antanaitis", new int[] {7, 7, 7, 10}),
+                new Student(1, "Jurgis", "Jurgaitis", new int[] {8, 10, 10, 10}),
+                new Student(2, "Juozas", "Juozaitis", new int[] {6, 9, 4, 7}),
+                new Student(4, "Jone", "Jonaite", new int[] {8, 10, 8, 10}),
+                new Student(2, "Ona", "Onute", new int[] {7, 6, 8, 5}),
+                new Student(4, "Marija", "Petraite", new int[] {8, 6, 8, 10}),
+                new Student(3, "Goda", "Godute", new int[] {7, 9, 7, 5})
         };
 
         for (Student s : students) {

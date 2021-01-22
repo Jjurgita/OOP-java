@@ -1,17 +1,19 @@
 package p06.notes.prat1;
 
 public class Student {
-    String firstname;
-    String lastname;
-    int[] marks;
+    public int level;
+    public String firstname;
+    public String lastname;
+    public int[] marks;
 
-    Student (String firstname, String lastname, int[] marks) {
+    public Student (int level, String firstname, String lastname, int[] marks) {
+        this.level = level;
         this.firstname = firstname;
         this.lastname = lastname;
         this.marks = marks;
     }
 
-    double average(){
+    public double average(){
         if (marks == null) return 0;
         int sum = 0;
         for (int i : marks) {

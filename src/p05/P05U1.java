@@ -57,7 +57,7 @@ public class P05U1 {
         }
     }
 
-    //palyginimui lastname naudojame compare.to
+    //String lastname palyginimui naudojame compare.to
     static int compare(Mokinys m1, Mokinys m2) {
         if (m1.level < m2.level) return -1;
         if (m1.level > m2.level) return 1;
