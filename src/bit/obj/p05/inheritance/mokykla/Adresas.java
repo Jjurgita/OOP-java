@@ -1,4 +1,4 @@
-package bit.obj.p05.inheritance;
+package bit.obj.p05.inheritance.mokykla;
 
 public class Adresas {
     private String miestas;

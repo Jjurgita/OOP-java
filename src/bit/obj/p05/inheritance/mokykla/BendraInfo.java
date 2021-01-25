@@ -1,4 +1,4 @@
-package bit.obj.p05.inheritance;
+package bit.obj.p05.inheritance.mokykla;
 
 public class BendraInfo {
     private String vardas;  // private / public / protected / ... /
