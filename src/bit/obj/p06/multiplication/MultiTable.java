@@ -3,7 +3,6 @@ package bit.obj.p06.multiplication;
 public class MultiTable {
     public static void main(String[] args) {
         //Atspausdinti daugybos lentele
-
         // _1 x _1 = __1
         // _4 x _4 = _16
         // 10 x 10 = 100
