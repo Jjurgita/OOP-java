@@ -1,4 +1,4 @@
-package p06.notes.prat2;
+package bit.obj.p06.notes.prat2;
 
 public class Human {
     // KLASES PASIEKIAMUMO KONTROLE

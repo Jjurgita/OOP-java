@@ -1,6 +1,4 @@
-package p05;
-
-import p05.Mokinys;
+package bit.obj.p05;
 
 public class P05U1 {
     public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class P05U1 {
 
         //susikurti Mokiniu masyva nurodant pilna kelia ir class pavadinima
         //taip rasyti nera visad patogu, taciau galima
-        //p05.Mokinys[] mokiniai = new p05.Mokinys[5];
+        //bit.obj.p05.Mokinys[] mokiniai = new bit.obj.p05.Mokinys[5];
 
         //jeigu nenorime rasyti ilgu pavadinimu, reikia import pradzioje class kelia
         Mokinys[] mokiniai = new Mokinys[]{

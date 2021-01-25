@@ -1,4 +1,4 @@
-package p06.notes;
+package bit.obj.p06.notes;
 
 public class GetterAndSetter {
     // Paprastai klasės laukai yra privatūs, o jų reikšmės nustatomos ir nuskaitomos metodų geteriu ir seteriu pagalba

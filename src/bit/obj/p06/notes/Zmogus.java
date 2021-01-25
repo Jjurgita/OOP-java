@@ -1,4 +1,4 @@
-package p06.notes;
+package bit.obj.p06.notes;
 
 public class Zmogus {
     // KLASES METODAI

@@ -1,4 +1,4 @@
-package p05;
+package bit.obj.p05;
 
 public class Mokinys {
     //jeigu Mokinys class file butu kitame package reikru prie Sring, int ir Mokinys konstruktoriaus prideti "public"

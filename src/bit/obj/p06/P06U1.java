@@ -1,6 +1,6 @@
-package p06;
+package bit.obj.p06;
 
-import p06.notes.prat1.Student;
+import bit.obj.p06.notes.prat1.Student;
 
 public class P06U1 {
     public static void main(String[] args) {

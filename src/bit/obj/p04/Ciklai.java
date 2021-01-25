@@ -1,4 +1,4 @@
-package p04;
+package bit.obj.p04;
 
 public class Ciklai {
     public static void main(String[] args) {

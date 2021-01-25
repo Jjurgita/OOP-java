@@ -1,4 +1,4 @@
-package p03;
+package bit.obj.p03;
 
 public class P03U1_2 {
 

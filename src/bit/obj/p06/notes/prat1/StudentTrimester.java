@@ -1,4 +1,4 @@
-package p06.notes.prat1;
+package bit.obj.p06.notes.prat1;
 
 public class StudentTrimester {
     public static void main(String[] args) {

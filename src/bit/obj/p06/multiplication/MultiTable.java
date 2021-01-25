@@ -1,4 +1,4 @@
-package p06.multiplication;
+package bit.obj.p06.multiplication;
 
 public class MultiTable {
     public static void main(String[] args) {

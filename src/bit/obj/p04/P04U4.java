@@ -1,4 +1,4 @@
-package p04;
+package bit.obj.p04;
 
 public class P04U4 {
     public static void main(String[] args) {
