@@ -1,6 +1,4 @@
-package bit.obj.p06;
-
-import bit.obj.p06.notes.prat1.Student;
+package bit.obj.p06.notes.p06U2;
 
 public class P06U2 {
     public static void main(String[] args) {
@@ -23,19 +21,12 @@ public class P06U2 {
         Išbandyti programą su įvairiu mokinių skaičiumi: 2, 3, 4, 5, 6, 33
          */
 
-        Student[] students = new Student[] {
-                new Student(2, "Jonas", "Kazys", new int[] {8, 9, 8, 10}),
-                new Student(3, "Petras", "Petraitis", new int[] {6, 4, 8, 4}),
-                new Student(1, "Antanas", "Antanaitis", new int[] {7, 7, 7, 10}),
-                new Student(1, "Jurgis", "Jurgaitis", new int[] {8, 10, 10, 10}),
-                new Student(3, "Juozas", "Juozaitis", new int[] {6, 9, 4, 7}),
-                new Student(4, "Jone", "Jonaite", new int[] {9, 10, 8, 10}),
-                new Student(2, "Ona", "Onute", new int[] {7, 6, 8, 5}),
-                new Student(4, "Marija", "Petraite", new int[] {5, 6, 8, 10}),
-                new Student(3, "Goda", "Godute", new int[] {7, 9, 8, 5})
+        Mokinys[] mokiniai = new Mokinys[] {
+                new Mokinys("Jonas"),
+                new Mokinys("Ona")
         };
 
-        System.out.println("1 ratas - 1/4:\n" + students[0].firstname + " - " + students[1].firstname + "\n");
+        System.out.println("1 ratas - 1/4:\n");
 
     }
 }
