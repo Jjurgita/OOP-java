@@ -1,4 +1,4 @@
-package bit.obj.p07.notes;
+package bit.obj.p07;
 
 import java.math.BigInteger;
 
