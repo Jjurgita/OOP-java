@@ -21,7 +21,7 @@ public class Main {
         System.out.println("size = " + container.size());
 
         for (int i = 0; i < container.size(); i++) {
-            IColor c = container.get(i);
+            Color c = container.get(i);
             System.out.println(c.getColor());
         }
     }

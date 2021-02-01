@@ -1,6 +1,6 @@
 package bit.obj.p09.color;
 
-public class B implements IColor {
+public class B implements Color {
 
     private int color;
 

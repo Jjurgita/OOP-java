@@ -2,21 +2,24 @@ package bit.obj.p09.color;
 
 public class Container implements IContainer{
 
-    private IColor[] colors = new IColor[5];
+    private  int number;
+    private Color[] colors = new Color[5]; //creates an array 5 objects long
 
     @Override
-    public void add(IColor c) {
-        //?
+    public void add(Color c) {
+
     }
 
     @Override
     public int size() {
-        //?
-        return 0;
+        for (Color n : colors){
+            number++;
+        }
+        return number;
     }
 
     @Override
-    public IColor get(int index) {
+    public Color get(int index) {
         return colors[index];
     }
 }
