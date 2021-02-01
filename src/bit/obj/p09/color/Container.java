@@ -6,7 +6,6 @@ public class Container implements IContainer{
     private int number;
     private Color[] colors = new Color[5];
 
-
     @Override
     public void add(Color c) {
         colors[object] = c;
@@ -15,8 +14,7 @@ public class Container implements IContainer{
 
     @Override
     public int size() {
-        number = colors.length;
-        return number;
+        return number = colors.length;
     }
 
     @Override
@@ -24,8 +22,14 @@ public class Container implements IContainer{
         return colors[index];
     }
 
-
-
-
+//    public int sizeObject() {
+//        for (int j = 0; j < colors.length; j++){
+//            if (colors[j] == null) {
+//            break;
+//            }
+//            number ++;
+//        }
+//        return number;
+//    }
 
 }
