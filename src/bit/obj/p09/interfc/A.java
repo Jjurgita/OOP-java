@@ -1,10 +1,10 @@
-package bit.obj.p09.color;
+package bit.obj.p09.interfc;
 
-public class B implements Color {
+public class A implements Color {
 
     private int color;
 
-    public B(int color) {
+    public A(int color) {
         this.color = color;
     }
 

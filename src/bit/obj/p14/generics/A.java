@@ -1,7 +1,6 @@
-package bit.obj.p09.color;
+package bit.obj.p14.generics;
 
 public class A implements Color {
-
     private int color;
 
     public A(int color) {
@@ -11,5 +10,10 @@ public class A implements Color {
     @Override
     public int getColor() {
         return color;
+    }
+
+    @Override
+    public String toString() {
+        return "A: color=" + color;
     }
 }

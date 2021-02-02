@@ -1,4 +1,4 @@
-package bit.obj.p09.color;
+package bit.obj.p09.interfc;
 /*
 Sukurti interface Color ir kelias klases implementuojancias ta interface;
 Sugalvoti klase Container, kuri implementuoja IContainer (interface)

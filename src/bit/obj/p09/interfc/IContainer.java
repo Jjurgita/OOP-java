@@ -1,4 +1,4 @@
-package bit.obj.p09.color;
+package bit.obj.p09.interfc;
 
 public interface IContainer {
 
