@@ -13,10 +13,19 @@ public class Main {
         container.add(new B(333));
         container.add(new B(444));
         container.add(new A(555));
-//        container.add(new A(666));
-//        container.add(new A(777));
-//        container.add(new A(888));
-//        container.add(new A(999));
+        container.add(new A(666));
+        container.add(new A(777));
+        container.add(new A(888));
+        container.add(new A(999));
+        container.add(new A(111));
+        container.add(new A(222));
+        container.add(new B(333));
+        container.add(new B(444));
+        container.add(new A(555));
+        container.add(new A(666));
+        container.add(new A(777));
+        container.add(new A(888));
+        container.add(new A(999));
 
         System.out.println("size = " + container.size());
 

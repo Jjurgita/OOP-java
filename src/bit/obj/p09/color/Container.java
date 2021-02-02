@@ -2,34 +2,31 @@ package bit.obj.p09.color;
 
 public class Container implements IContainer{
 
-    private int object = 0;
-    private int number;
+    private int size;
     private Color[] colors = new Color[5];
 
     @Override
     public void add(Color c) {
-        colors[object] = c;
-        object++;
+        if (colors.length == size) {
+            //kiekvienakart praplesti masyva 5 objektais
+            Color[] colorsNew = new Color[colors.length + 5];
+            for (int i = 0; i < colors.length; i++) colorsNew[i] = colors[i];
+            colors = colorsNew;
+        }
+        colors[size] = c;
+        size++;
     }
 
     @Override
     public int size() {
-        return number = colors.length;
+        return size;
     }
 
     @Override
     public Color get(int index) {
+        if(index >= size) {
+            throw new ArrayIndexOutOfBoundsException(index + " >= " + size);
+        }
         return colors[index];
     }
-
-//    public int sizeObject() {
-//        for (int j = 0; j < colors.length; j++){
-//            if (colors[j] == null) {
-//            break;
-//            }
-//            number ++;
-//        }
-//        return number;
-//    }
-
 }
