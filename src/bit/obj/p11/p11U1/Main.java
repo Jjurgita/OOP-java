@@ -16,14 +16,17 @@ public class Main {
         //Kaip ir aibė(Set) Map yra Lygiuota (key atžvilgiu) - TreeMap
         //Lygiuota - kai elementai išrikiuojami sąraše pagal jų palyginimus (compareTo metodas);
 
+        //1) Sukuriam map collection:
         Map<BigInteger, Person> persons = new TreeMap<>();
 
+        //2) Įdedam naujai konstruojamus Person objektus:
         persons.put(new BigInteger("39901010101"), new Person("J", "J", new BigInteger("39901010101")));
         persons.put(new BigInteger("49901010101"), new Person("P", "P", new BigInteger("49901010101")));
         persons.put(new BigInteger("39901010102"), new Person("K", "K", new BigInteger("39901010102")));
         persons.put(new BigInteger("39901010103"), new Person("L", "L", new BigInteger("39901010103")));
         persons.put(new BigInteger("39901010103"), new Person("S", "S", new BigInteger("39901010103")));
 
+        //3) Spausdinam collection esančius objektus:
         for (Person i : persons.values()) {
             System.out.println(" " + i);
         }
