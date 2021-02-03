@@ -4,7 +4,9 @@ public class Person {
     //1) Kintamieji:
     private String firstname;
     private String lastname;
-    private String personID;//kadangi nežinome, ar ateityje/kitoje šalyje nebus/nėra raidžių, geriau naudoti String kintamojo tipą
+    private String personID;
+    //kadangi nežinome, ar ateityje/kitoje šalyje personID nebus/nėra raidžių, geriau naudoti String kintamojo tipą
+    //BigInteger rekomenduojama naudoti, jeigu planuojama su jais atlikti aritmetinius veiksmus
 
     //2) Konstruktorius - konstruojam Person:
     public Person(String firstname, String lastname, String personID) {
@@ -43,4 +45,5 @@ public class Person {
     public String toString() {
         return firstname + "." + lastname + "." + " - "+ personID;
     }
+
 }

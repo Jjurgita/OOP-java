@@ -47,8 +47,8 @@ public class Main {
     }
 
     //4) Jeigu į kolekciją įdedam du skirtingus žmones su tuo pačiu asmens kodu (key), įdedama nauja reikšmė, o sena digsta..
-    //          kaip sutvarkyti, kad abi to paties key value būtų atspausdinta?
-    //5) Sukuriame kelis Map, tik šįkart naudoti List<Person> listą; apsirašant dar viena metoda tam, kad galėčiau įdėti new Person į List
+    //kaip sutvarkyti, kad abi to paties key value būtų atspausdinta?
+    //5) Sukuriame kelis Map, tik šįkart naudoti List<Person> listą; apsirašant dar viena metoda tam, kad galėtume įdėti new Person į List
     static void secondMap(Map<String, List<Person>> persons) {
         Person p1 = new Person("A", "A", "00000000000");
         addSecondMap(persons, p1);
@@ -60,7 +60,7 @@ public class Main {
         addSecondMap(persons, new Person("S", "S", "44444444444"));
 
         for(List<Person> personsList : persons.values()){
-//            System.out.println(personsList.size());
+//            System.out.println(personsList.size()); atspausdina kiek yra vienodu key
             for(Person p : personsList){
                 System.out.println(" " + p);
             }
