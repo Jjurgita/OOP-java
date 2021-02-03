@@ -2,10 +2,7 @@ package bit.obj.p11.p11U2;
 
 import bit.obj.p11.p11U1.Person;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /*
         Sukurti class Address ir naudojant Collections atspausdinti objektų sąrašą
@@ -19,6 +16,7 @@ public class Main {
     static void setMap(Map<String, List<Address>> addresses) {
         addMapList(addresses, new Address("Vilnius", "Vilniaus g.", "13"));
         addMapList(addresses, new Address("Vilnius", "Liepų g.", "1"));
+        addMapList(addresses, new Address("Alytus", "Vilniaus g.", "9"));
         addMapList(addresses, new Address("Vilnius", "Kauno g.", "87"));
         addMapList(addresses, new Address("Vilnius", "Sodų g.", "130"));
         addMapList(addresses, new Address("Klaipėda", "Palangos g.", "3"));
@@ -27,6 +25,7 @@ public class Main {
         addMapList(addresses, new Address("Kaunas", "Kauno g.", "10"));
         addMapList(addresses, new Address("Kaunas", "Sodų g.", "100"));
         addMapList(addresses, new Address("Kaunas", "Liepų g.", "1"));
+        addMapList(addresses, new Address("Alytus", "Kauno g.", "66"));
         addMapList(addresses, new Address("Kaunas", "Palangos g.", "88"));
         addMapList(addresses, new Address("Kaunas", "Vilniaus g.", "54"));
 
