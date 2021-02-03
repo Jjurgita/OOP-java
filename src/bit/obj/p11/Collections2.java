@@ -13,14 +13,16 @@ public class Collections2 {
     public static void main(String[] args) {
 
         /*
-            Set - tai aibę (arba nesikartojantį sąrašą) ir darbą su juo aprašanti sąsaja
-            Pagrindinis skirtumas nuo sąrašo yra tas, kad mes nežinome koks elemento eilės numeris ar indeksas, tiesiog tokios savybės aibėje nėra, nes ji saugo elementus kitaip;
+            Set - tai aibę (arba nesikartojantį sąrašą) ir darbą su juo aprašanti sąsaja.
+            Nuo list skiriamsi tuo, kad reiksmes negali kartotis;
 
             Aibė yra 2 rūšių:
-                    Paprasta - kada mes nežinome ir mums nerūpi elementų išsidėstymo tvarka;
-                    Lygiuota - kai elementai išrikiuojami sąraše pagal jų palyginimus (compareTo metodas);
+                    Paprasta - kada mes nežinome ir mums nerūpi elementų išsidėstymo tvarka - nesvarbus rūšiavimas;
+                    Lygiuota - kai elementai išrikiuojami sąraše pagal jų palyginimus (compareTo metodas) - svarbus rūšiavimas;
 
             Paprastą aibės sąsają realizuoja HashSet, o lygiuotą TreeSet. Yra ir daugiau realizacijų..
+            Dažniausiai naudojami HashSet
+
 
          */
 

@@ -1,15 +1,13 @@
 package bit.obj.p11.p11U1;
 
-import java.math.BigInteger;
-
 public class Person {
     //1) Kintamieji:
     private String firstname;
     private String lastname;
-    private BigInteger personID;
+    private String personID;//kadangi nežinome, ar ateityje/kitoje šalyje nebus/nėra raidžių, geriau naudoti String kintamojo tipą
 
     //2) Konstruktorius - konstruojam Person:
-    public Person(String firstname, String lastname, BigInteger personID) {
+    public Person(String firstname, String lastname, String personID) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.personID = personID;
@@ -32,11 +30,11 @@ public class Person {
         this.lastname = lastname;
     }
 
-    public BigInteger getPersonID() {
+    public String getPersonID() {
         return personID;
     }
 
-    public void setPersonID(BigInteger personID) {
+    public void setPersonID(String personID) {
         this.personID = personID;
     }
 

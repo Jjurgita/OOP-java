@@ -11,11 +11,10 @@ public class Collections3 {
     public static void main(String[] args) {
 
         /*
-            Map - tai sąsaja, kuri aprašo kaip turi veikti kolekciją tipo “raktas-reikšmė”.
+            Map - tai sąsaja, kuri aprašo kaip turi veikti kolekciją tipo “raktas-reikšmė” (key-value pairs).
 
             Kaip ir aibės yra paprastas ir lygiuotas variantai raktų atžvilgiu.
             Paprastą Map sąsają realizuoja HashMap, o lygiuotą TreeMap. Yra ir daugiau realizacijų.
-
          */
 
         System.out.println("HashMap:");
