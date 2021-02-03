@@ -45,8 +45,13 @@ public class Main {
         System.out.println("---------------------------------");
 
 
-        //TreeSet
-        //Tam, kad galėtume naudoti TreeSet, reikia implementuoti Comparable interface savo Address class
+        //TreeSet su mūsų sukurtas Address class
+        /*
+               The elements in TreeSet must be of a Comparable type.
+               String and Wrapper classes are Comparable by default.
+               To add user-defined objects in TreeSet, you need to implement the Comparable interface.
+         */
+
         Set<Address> addresses = new TreeSet<Address>();
         addresses.add(new Address(1, "Babtai", "Lapu aleja 12"));
         addresses.add(new Address(3, "Vilnius", "Gedimino 1"));
