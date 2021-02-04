@@ -21,6 +21,7 @@ public class Main {
         System.out.println(a.pow2());
         System.out.println(a.pow2());
         System.out.println(a.pow2());
+        System.out.println("----------------");
 
         B b = new B(new Next() {
             @Override
@@ -33,6 +34,7 @@ public class Main {
         System.out.println(b.next());
         System.out.println(b.next());
         System.out.println(b.next());
+        System.out.println("----------------");
 
         b.setNext(new Next() {
             @Override
