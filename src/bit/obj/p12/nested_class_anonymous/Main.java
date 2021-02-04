@@ -5,6 +5,7 @@ public class Main {
 
         /*
                 Anoniminė klasė tai klasė, kuri aprašoma išraiškoje, kur reikalingas objektas pagal interfeisą arba abstrakčią klasę.
+                Visada privalo implementuoti interface arba extendint class;
          */
 
         A a = new A() {

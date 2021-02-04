@@ -1,11 +1,9 @@
 package bit.obj.p11.p11U2;
 
-import bit.obj.p11.p11U1.Person;
-
 import java.util.*;
 
 /*
-        Sukurti class Address ir naudojant Collections atspausdinti objektų sąrašą
+        Sukurti class Address ir naudojant Collections, atspausdinti objektų sąrašą
         pvz.: kiek ir kokių adresų yra Vilniuje, Kaune ir t.t.
  */
 public class Main {
@@ -25,14 +23,15 @@ public class Main {
         addMapList(addresses, new Address("Kaunas", "Kauno g.", "10"));
         addMapList(addresses, new Address("Kaunas", "Sodų g.", "100"));
         addMapList(addresses, new Address("Kaunas", "Liepų g.", "1"));
+        addMapList(addresses, new Address("Kaunas", "Vilniaus g.", "54-1"));
         addMapList(addresses, new Address("Alytus", "Kauno g.", "66"));
         addMapList(addresses, new Address("Kaunas", "Palangos g.", "88"));
         addMapList(addresses, new Address("Kaunas", "Vilniaus g.", "54"));
 
         System.out.println("----------------------------");
-        for(List<Address> addressList : addresses.values()){
+        for (List<Address> addressList : addresses.values()) {
             System.out.println(addressList.size() + " addresses:");
-            for(Address a : addressList){
+            for (Address a : addressList) {
                 System.out.println(" " + a);
             }
             System.out.println("----------------------------");

@@ -2,19 +2,18 @@ package bit.obj.p11.p11U2.notes_Set;
 
 import java.util.Objects;
 
-public class Address implements Comparable<Address>{
+public class Address implements Comparable<Address> {
     private String miestas;
     private String gatve;
 
     /*
-    visi Comparatoriai grąžina int
+    Comparatoriai skirti palyginti du objektus;
+    Visi Comparatoriai grąžina int
 
     if  (this < o) return -x
     if (this == o) return 0
     if (this > o) return +x
-
      */
-
     @Override
     public int compareTo(Address o) { //lyginam this su o
         int c = this.miestas.compareTo(o.miestas);
@@ -60,7 +59,6 @@ public class Address implements Comparable<Address>{
     public int hashCode() {
         return Objects.hash(miestas, gatve);
     }
-
 
 
 }

@@ -38,8 +38,8 @@ public class Main {
 
         System.out.println("adresas1=" + adresas1.size() + " " + adresas1);
 
-        Address a1 = new Address( "Babtai", "Lapu aleja 12");
-        Address a2 = new Address( "Babtai", "Lapu aleja 12");
+        Address a1 = new Address("Babtai", "Lapu aleja 12");
+        Address a2 = new Address("Babtai", "Lapu aleja 12");
         System.out.println("a1 == a2 ? " + (a1 == a2));//rasyt false, a1 ir a2 yra atskiri, nors reikšmės ir tos pačios
         System.out.println("a1.equals(a2) ? " + a1.equals(a2));//norit palyginti reiksmes reikia naudoti Overridintą Object class equals metodą
         System.out.println("---------------------------------");
