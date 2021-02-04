@@ -1,38 +1,30 @@
 package bit.obj.p11.p11U2.notes_Set;
 
-import bit.obj.p05.inheritance.mokykla.Adresas;
-import bit.obj.p14.generics.A;
-
 import java.util.Objects;
 
 public class Address implements Comparable<Address>{
-    private int id;
     private String miestas;
     private String gatve;
 
+    /*
+    visi Comparatoriai grąžina int
+
+    if  (this < o) return -x
+    if (this == o) return 0
+    if (this > o) return +x
+
+     */
+
     @Override
-    public int compareTo(Address o) {
-        if(id>o.id){
-            return 1;
-        }else if(id<o.id){
-            return -1;
-        }else{
-            return 0;
-        }
+    public int compareTo(Address o) { //lyginam this su o
+        int c = this.miestas.compareTo(o.miestas);
+        if (c != 0) return c;
+        return this.gatve.compareTo(o.gatve);
     }
 
-    public Address(int id, String miestas, String gatve) {
-        this.id = id;
+    public Address(String miestas, String gatve) {
         this.miestas = miestas;
         this.gatve = gatve;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getMiestas() {

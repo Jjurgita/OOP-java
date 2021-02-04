@@ -28,24 +28,24 @@ public class Main {
 
         // Set'ai su class Address (HashSet)
         Set<Address> adresas1 = new HashSet<>();
-        adresas1.add(new Address(1,"Babtai", "Lapu aleja 12"));
-        adresas1.add(new Address(2,"Vilnius", "Gedimino 1"));
-        adresas1.add(new Address(1,"Babtai", "Lapu aleja 12"));
+        adresas1.add(new Address("Babtai", "Lapu aleja 12"));
+        adresas1.add(new Address("Vilnius", "Gedimino 1"));
+        adresas1.add(new Address("Babtai", "Lapu aleja 12"));
 
-        Address babtai = new Address(1,"Babtai", "Lapu aleja 12");
+        Address babtai = new Address("Babtai", "Lapu aleja 12");
         adresas1.add(babtai);
         adresas1.add(babtai);
 
         System.out.println("adresas1=" + adresas1.size() + " " + adresas1);
 
-        Address a1 = new Address(1, "Babtai", "Lapu aleja 12");
-        Address a2 = new Address(1, "Babtai", "Lapu aleja 12");
+        Address a1 = new Address( "Babtai", "Lapu aleja 12");
+        Address a2 = new Address( "Babtai", "Lapu aleja 12");
         System.out.println("a1 == a2 ? " + (a1 == a2));//rasyt false, a1 ir a2 yra atskiri, nors reikšmės ir tos pačios
         System.out.println("a1.equals(a2) ? " + a1.equals(a2));//norit palyginti reiksmes reikia naudoti Overridintą Object class equals metodą
         System.out.println("---------------------------------");
 
 
-        //TreeSet su mūsų sukurtas Address class
+        //TreeSet su mūsų sukurta Address class
         /*
                The elements in TreeSet must be of a Comparable type.
                String and Wrapper classes are Comparable by default.
@@ -53,10 +53,10 @@ public class Main {
          */
 
         Set<Address> addresses = new TreeSet<Address>();
-        addresses.add(new Address(1, "Babtai", "Lapu aleja 12"));
-        addresses.add(new Address(3, "Vilnius", "Gedimino 1"));
-        addresses.add(new Address(1, "Babtai", "Lapu aleja 12"));
-        addresses.add(new Address(2, "Kaunas", "Lapu aleja 12"));
+        addresses.add(new Address("Babtai", "Lapu aleja 12"));
+        addresses.add(new Address("Vilnius", "Gedimino 1"));
+        addresses.add(new Address("Babtai", "Lapu aleja 12"));
+        addresses.add(new Address("Kaunas", "Lapu aleja 12"));
 
         System.out.println("addresses = " + addresses.size() + " " + addresses);
     }
