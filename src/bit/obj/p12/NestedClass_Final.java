@@ -1,6 +1,6 @@
 package bit.obj.p12;
 
-public class NestedClass {
+public class NestedClass_Final {
     /*
             GALUTINĖ REIKŠMĖ
             Jeigu norim pabrėžti, kad klasės lauko, kintamojo arba metodo parametro reikšmės negalima pakeisti,
