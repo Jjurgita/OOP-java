@@ -1,19 +1,25 @@
 package bit.obj.p09.p09U1;
 
+import java.math.BigDecimal;
+
 public class Client implements IPayment {
 
     private String name;
     private String bankAcc;
-    private int sum;
+    private BigDecimal sum;
 
-    public Client(String name, String bankAcc, int sum) {
+    public Client(String name, String bankAcc, BigDecimal sum) {
         this.name = name;
         this.bankAcc = bankAcc;
         this.sum = sum;
     }
 
-    public Client() {
+    public void setBankAcc(String bankAcc) {
+        this.bankAcc = bankAcc;
+    }
 
+    public void setSum(BigDecimal sum) {
+        this.sum = sum;
     }
 
     public String getName() {
@@ -35,17 +41,15 @@ public class Client implements IPayment {
     }
 
     @Override
-    public int getSum() {
-        return 0;
+    public BigDecimal getSum() {
+        return sum;
     }
 
     @Override
-    public void add(Client client) {
-
+    public String toString() {
+        return "Name: " + getName() + ", Bank account number: " + getBankAcc() + ", Sum: " + getSum();
     }
 
-    @Override
-    public void add(Employee employee) {
+    // 2 Dalis - modifikuoti Client class - kaupti visas sum įnaują masayvą
 
-    }
 }

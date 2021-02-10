@@ -1,19 +1,17 @@
 package bit.obj.p09.p09U1;
 
-public class Employee implements IPayment{
+import java.math.BigDecimal;
+
+public class Employee implements IPayment {
 
     private String name;
     private String bankAcc;
-    private int sum;
+    private BigDecimal sum;
 
-    public Employee(String name, String bankAcc, int sum) {
+    public Employee(String name, String bankAcc, BigDecimal sum) {
         this.name = name;
         this.bankAcc = bankAcc;
         this.sum = sum;
-    }
-
-    public Employee() {
-
     }
 
     public String getName() {
@@ -28,7 +26,7 @@ public class Employee implements IPayment{
         this.bankAcc = bankAcc;
     }
 
-    public void setSum(int sum) {
+    public void setSum(BigDecimal sum) {
         this.sum = sum;
     }
 
@@ -43,18 +41,12 @@ public class Employee implements IPayment{
     }
 
     @Override
-    public int getSum() {
-        return 0;
+    public BigDecimal getSum() {
+        return sum;
     }
 
     @Override
-    public void add(Employee employee) {
-
+    public String toString() {
+        return "Name: " + getName() + ", Bank account number: " + getBankAcc() + ", Sum: " + getSum();
     }
-
-    @Override
-    public void add(Client client) {
-
-    }
-
 }
