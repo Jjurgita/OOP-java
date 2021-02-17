@@ -1,4 +1,7 @@
 package bit.obj.p16.streams;
+
+import java.io.*;
+
 /*
       STREAMS (srautai) skirti aprašyti ir vykdyti veiksmus su kolekcijos elementais.
 
@@ -68,6 +71,79 @@ package bit.obj.p16.streams;
                  Collectors.mapping()
        (demo6 package)
  */
- public class Streams {
+public class Streams {
+    /*
+         DVEJETAINIAI SRAUTAI (BINARY STREAMS)
+         Naudojami kai mums nerūpi skaitomos/rašomos informacijos tipas,
+         t.y. kai laikoma, kad visas informacija yra tik baitų (8 bitai: 0-255) seka ir, jei reikės, mes patys ją interpretuosim taip kaip mums reikia;
 
- }
+         - InputStream, OutputStream - abstrakčios klasės
+         - FileInputStream, FileOutputStream
+         (pvz žemiau:)
+     */
+    public static void main(String... args) {
+
+        long startTime = System.nanoTime();
+
+        try (
+                InputStream in = new FileInputStream("src/main/java/lt/baltictalents/p20/java-iso-8859-13.txt");
+                OutputStream out = new FileOutputStream("src/main/java/lt/baltictalents/p20/output.txt");
+        ) {
+            int c;
+            while ((c = in.read()) != -1) {
+                out.write(c);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        long estimatedTime = System.nanoTime() - startTime;
+        System.out.println("Laikas: " + (estimatedTime / 1e6) + "ms");
+    }
+}
+/*
+        TEKSTINIAI SRAUTAI (CHARACTER STREAMS) -
+        tai dvejetainius įvedimo/išvedimo srautus naudojančios klasės,
+        kurios skaitymo/rašymo metu dekoduoja/užkoduoja simbolius atsižvelgiant į nurodytas koduotes
+        (arba pagal nustatytą programos standartinę koduotę - paprastai tai UTF-8).
+
+        - Reader, Writer - abstrakčios klasės
+        - FileReader, InputStreamReader - įvedimas
+        - FileWriter, OutputStreamWriter - išvedimas
+        (demo7 package)
+
+
+        BUFERIZUOTAS SKAITYMAS/RAŠYMAS
+        Anksčiau matytos klasės realizuoja tiesioginį skaitymą/rašymą,
+        t.y. pvz. su kiekviena skaitymo operacija atitinkamos klasės objektas nuskaito iš failo ar kito šaltinio tik vieną simbolį - labai neefektyvu!!!
+
+        - BufferedReader - įvedimas
+        - BufferedWriter - išvedimas
+        (demo8 package)
+
+        Taip pat egzistuoja buferizuotos InputStream ir OutputStream versijos - atitinkamai BufferedInputStream ir BufferedOutputStream.
+        (demo9 package)
+
+
+        DUOMENŲ SRAUTAI (DATA STREAMS) -
+        tai binariniai srautai skirti skaityti/rašyti primityvius duomenų tipus: int, short, byte, long, double, float, boolean, char, o taip pat ir String.
+
+        Duomenų srautų klasės turi realizuoti atitinkamas sąsajas:
+                - DataInput
+                - DataOutput
+
+        Klasės: DataInputStream, DataOutputStream;
+        (demo10 package)
+
+
+        OBJEKTŲ SRAUTAI (OBJECT STREAMS) - darbui su objektais.
+
+        Objektų srautų klasės turi realizuoti atitinkamas sąsajas:
+                - ObjectInput
+                - ObjectOutput
+
+        Klasės: ObjectInputStream, ObjectOutputStream;
+
+        p.s Objektų skaitymas/rašymas nėra paprasta operacija, nes vienas objektas gali turėti savo viduje nuorodą į kitą/kitus objektus ir t.t.
+
+ */
